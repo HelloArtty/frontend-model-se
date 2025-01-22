@@ -57,7 +57,7 @@ const Home: React.FC = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://backend-model-se.onrender.com/predict", {
+      const response = await fetch("http://127.0.0.1:8080/predict", {
         method: "POST",
         body: formData,
       });
